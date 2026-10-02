@@ -28,7 +28,7 @@ class EsetRegister:
         self.eset_password = eset_password
         self.driver = driver
         self.window_handle: Optional[str] = None
-        self.wait = WebDriverWait(self.driver, 15)
+        self.wait = WebDriverWait(self.driver, 30)
 
     def createAccount(self) -> bool:
         logging.info('Register page loading...')
